@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Arthur Beaulieu 12-2018 | Design Patterns Training @3DS w/ Simon Franck -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Design Patterns (GoF)</title>
+		<style>
+			hr {
+				width: 80%;
+				max-width: 1280px;
+			}
+			button {
+				background-color: rgb(244, 244, 244);
+				border: solid 1px rgb(42, 42, 42);
+				border-radius: 3px;
+				cursor: pointer;
+				font-family: Helvetica;
+				font-weight: bold;
+				height: 40px;
+				transition: 0.2s all 0s ease;
+				width: 220px;
+			}
+			button:active,
+			button:focus,
+			button:hover {				  
+			  box-shadow: 0px 0px 5px grey;
+			}
+		</style>	
+	</head>
+	<body style="font-family:Segoe,Helvetica,serif;text-align:center;margin:15px;">
+		<h1><strong>JavaScript</strong> design patterns implementation</h1>
+		<p>JavaScript ES5 and ES6 implementation of the 23 Gang Of Four design patterns for OOP.</p>
+		<h2>A training given by <em><a href="http://antislashn.org/index.php?action=show&param1=accueil" target="_blank">Franck Simon</a></em></h2>
+		<h3>Open the developer console to see the implemented patterns output.</h3>
+		<hr>
+		<div style="width:80%;margin:15px auto;max-width:910px;">
+			<h2 id="js-pattern-title">Pattern Explanation</h2>
+			<p id="js-pattern-explanation" style="margin:0;">Test a pattern to see informations about it here.</p>
+		</div>
+		<hr>
+		<h2>Behavioral Patterns (11 patterns)</h2>
+		<div style="display:grid;width:80%;margin:33px auto;grid-gap:10px;grid-template-columns:repeat(4,1fr);max-width:910px;justify-items:center;">
+			<button id="js-button-1">Test Chain Of Responsability</button>			
+			<button id="js-button-2">Test Command</button>	
+			<button id="js-button-3">Test Interpreter</button>	
+			<button id="js-button-4">Test Iterator</button>
+			<button id="js-button-5">Test Mediator</button>
+			<button id="js-button-6">Test Memento</button>
+			<button id="js-button-7">Test Observer</button>			
+			<button id="js-button-8">Test State</button>
+			<button id="js-button-9">Test Strategy</button>
+			<button id="js-button-10">Test Template</button>
+			<button id="js-button-11">Test Visitor</button>
+		</div>
+		<h2>Creational Patterns (5 patterns)</h2>
+		<div style="display:grid;width:80%;margin:15px auto;grid-gap:10px;grid-template-columns:repeat(4,1fr);max-width:910px;justify-items:center;">
+			<button id="js-button-12">Test Abstract Factory</button>			
+			<button id="js-button-13">Test Builder</button>			
+			<button id="js-button-14">Test Factory</button>
+			<button id="js-button-15">Test Prototype</button>
+			<button id="js-button-16">Test Singleton</button>
+		</div>		
+		<h2>Structural Patterns (7 patterns)</h2>
+		<div style="display:grid;width:80%;margin:15px auto;grid-gap:10px;grid-template-columns:repeat(4,1fr);max-width:910px;justify-items:center;">
+			<button id="js-button-17">Test Adapter</button>
+			<button id="js-button-18">Test Bridge</button>
+			<button id="js-button-19">Test Composite</button>
+			<button id="js-button-20">Test Decorator</button>
+			<button id="js-button-21">Test Facade</button>
+			<button id="js-button-22">Test Flyweight</button>			
+			<button id="js-button-23">Test Proxy</button>			
+		</div>
+		<br><hr>
+		<!-- Pattern scripts inclusion -->
+		<!-- NB: the defer keyword allow the scripts to be loaded sequencially, in their very order. -->
+		<!-- The following repository is also a good source of knowledge about DP in JavaScript: https://github.com/fbeline/Design-Patterns-JS/ -->
+	<!-- Behavioral Patterns -->
+			<!-- Chain Of Responsibility -->
+		<script src="patterns_es5/behavioral/chainOfResponsibility_es5.js" defer></script>
+		<script src="patterns_es6/behavioral/chainOfResponsibility_es6.js" defer></script>		
+			<!-- Command -->
+		<script src="patterns_es5/behavioral/command_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/command_es6.js" defer></script>	
+			<!-- Interpreter -->
+		<script src="patterns_es5/behavioral/interpreter_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/interpreter_es6.js" defer></script>	
+			<!-- Iterator -->
+		<script src="patterns_es5/behavioral/iterator_es5.js" defer></script>		
+		<script src="patterns_es6/behavioral/iterator_es6.js" defer></script>
+			<!-- Mediator -->
+		<script src="patterns_es5/behavioral/mediator_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/mediator_es6.js" defer></script>	
+			<!-- Memento -->
+		<script src="patterns_es5/behavioral/memento_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/memento_es6.js" defer></script>	
+			<!-- Observer -->
+		<script src="patterns_es5/behavioral/observer_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/observer_es6.js" defer></script>		
+				<!-- State -->
+		<script src="patterns_es5/behavioral/state_es5.js" defer></script>
+		<script src="patterns_es6/behavioral/state_es6.js" defer></script>		
+			<!-- Strategy -->
+		<script src="patterns_es5/behavioral/strategy_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/strategy_es6.js" defer></script>																	
+			<!-- Template -->
+		<script src="patterns_es5/behavioral/template_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/template_es6.js" defer></script>	
+			<!-- Visitor -->
+		<script src="patterns_es5/behavioral/visitor_es5.js" defer></script>				
+		<script src="patterns_es6/behavioral/visitor_es6.js" defer></script>	
+	<!-- Creational Patterns -->
+			<!-- Abstract Factory -->
+		<script src="patterns_es5/creational/abstractFactory_es5.js" defer></script>				
+		<script src="patterns_es6/creational/abstractFactory_es6.js" defer></script>		
+			<!-- Builder -->
+		<script src="patterns_es5/creational/builder_es5.js" defer></script>				
+		<script src="patterns_es6/creational/builder_es6.js" defer></script>		
+			<!-- Factory -->
+		<script src="patterns_es5/creational/factory_es5.js" defer></script>				
+		<script src="patterns_es6/creational/factory_es6.js" defer></script>
+			<!-- Prototype -->
+		<script src="patterns_es5/creational/prototype_es5.js" defer></script>				
+		<script src="patterns_es6/creational/prototype_es6.js" defer></script>
+			<!-- Singleton -->
+		<script src="patterns_es5/creational/singleton_es5.js" defer></script>		
+		<script src="patterns_es6/creational/singleton_es6.js" defer></script>
+	<!-- Structural Patterns -->
+			<!-- Adapter -->
+		<script src="patterns_es5/structural/adapter_es5.js" defer></script>				
+		<script src="patterns_es6/structural/adapter_es6.js" defer></script>						
+			<!-- Bridge -->
+		<script src="patterns_es5/structural/bridge_es5.js" defer></script>				
+		<script src="patterns_es6/structural/bridge_es6.js" defer></script>				
+			<!-- Composite -->
+		<script src="patterns_es5/structural/composite_es5.js" defer></script>
+		<script src="patterns_es6/structural/composite_es6.js" defer></script>	
+			<!-- Decorator -->
+		<script src="patterns_es5/structural/decorator_es5.js" defer></script>
+		<script src="patterns_es6/structural/decorator_es6.js" defer></script>						
+			<!-- Facade -->
+		<script src="patterns_es5/structural/facade_es5.js" defer></script>				
+		<script src="patterns_es6/structural/facade_es6.js" defer></script>				
+			<!-- Flyweight -->
+		<script src="patterns_es5/structural/flyweight_es5.js" defer></script>				
+		<script src="patterns_es6/structural/flyweight_es6.js" defer></script>	
+			<!-- Proxy -->
+		<script src="patterns_es5/structural/proxy_es5.js" defer></script>				
+		<script src="patterns_es6/structural/proxy_es6.js" defer></script>									
+	<!-- Button test -->
+		<script src="utils/testFunctions.js" defer></script>	
+		<script src="utils/app.js" defer></script>	
+	</body>
+</html>	
