@@ -1,6 +1,6 @@
 # GoF Design Patterns
 
-This repository contains ``C++``, ``Java`` and ``JavaScript`` implementations of the Gang of Four (GoF) [Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns).
+This repository contains ``C++``, ``Java`` and ``JavaScript`` implementations of the [Gang of Four (GoF) Design Patterns](https://en.wikipedia.org/wiki/Design_Patterns).
 Here is the implementation completion (pull requests are welcome 😋):
 
 - C++: 17/23 ;
